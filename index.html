@@ -417,6 +417,10 @@ img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .odd-reason{text-align:center;min-height:30px;padding-bottom:2px;font-size:20px;font-weight:800;
   color:var(--terra);opacity:0;transition:opacity .3s}
 .odd-reason.show{opacity:1}
+.ar{display:block;direction:rtl;unicode-bidi:isolate;font-size:.62em;font-weight:600;color:#b0a48f;margin-top:3px;line-height:1.6}
+.rtl-ar{direction:rtl;text-align:right}
+.rtl-ar h1,.rtl-ar h2,.rtl-ar h3,.rtl-ar p,.rtl-ar b,.rtl-ar .hook-big,.rtl-ar .hook-chal,.rtl-ar .hook-sent,.rtl-ar .hook-rule,.rtl-ar .fb-sub,.rtl-ar .fb-line{font-family:Tahoma,"Geeza Pro","Noto Kufi Arabic","Noto Sans Arabic",Arial,sans-serif;letter-spacing:0}
+.rtl-ar .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
 </style>
 </head>
 <body>
@@ -429,30 +433,31 @@ img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   <main id="stage">
 
     <!-- p1 device check (static) -->
-    <section class="slide active" data-sec="Before We Start">
+    <section class="slide active rtl-ar" data-sec="Before We Start">
       <div class="panel">
         <div class="instr"><button class="snd" data-audio="assets/audio/check.mp3?v=20260813c">🔊</button>
-          <h2>Before We Start</h2></div>
+          <h2>مرحبا بك في حصة تعلم اللغة الإنجليزية</h2></div>
+        <p style="font-size:20px;color:#6b5f4d;margin:-4px 0 16px">استعد لدرس ممتع عن الحروف A وB وC وست كلمات يومية. الهدف هو التحدث بثقة — خطوة بخطوة، دون خوف.</p>
         <div class="dev-grid">
-          <div class="dev-card"><span class="di">🎙️</span><div><b>Check your sound</b><p>Make sure the microphone works clearly.</p></div></div>
-          <div class="dev-card"><span class="di">📷</span><div><b>Turn on your camera</b><p>Sit in a quiet place with good lighting.</p></div></div>
-          <div class="dev-card"><span class="di">📶</span><div><b>Stable connection</b><p>Test your internet before class.</p></div></div>
-          <div class="dev-card"><span class="di">📝</span><div><b>Get your tools</b><p>Paper and pen, ready to speak.</p></div></div>
+          <div class="dev-card"><span class="di">🎙️</span><div><b>تحقق من صوتك</b><p>تأكد أن الميكروفون يعمل بوضوح.</p></div></div>
+          <div class="dev-card"><span class="di">📷</span><div><b>شغّل الكاميرا</b><p>اجلس في مكان هادئ وإضاءة جيدة.</p></div></div>
+          <div class="dev-card"><span class="di">📶</span><div><b>اتصال مستقر</b><p>اختبر الإنترنت قبل بدء الحصة.</p></div></div>
+          <div class="dev-card"><span class="di">📝</span><div><b>جهّز أدواتك</b><p>ورقة وقلم، واستعد للتحدث.</p></div></div>
         </div>
       </div>
     </section>
 
     <!-- p2 hook -->
-    <section class="slide" data-sec="Today's Mission">
+    <section class="slide rtl-ar" data-sec="Today's Mission">
       <div class="panel">
         <div class="hook-wrap">
-          <div class="hook-big">25 Minutes.<br>3 Letters.<br><span class="hl">6 Words.</span></div>
-          <div class="hook-chal">Are you in?</div>
-          <div class="hook-rule">No Arabic. No fear. Just English.</div>
+          <div class="hook-big">٢٥ دقيقة.<br>٣ حروف.<br><span class="hl">٦ كلمات.</span></div>
+          <div class="hook-chal">هل أنت مستعد؟</div>
+          <div class="hook-rule">بعد ٢٥ دقيقة، ستتقنها بثقة — خطوة بخطوة، دون خوف!</div>
           <div class="hook-cards">
-            <div class="hook-card"><span class="hi">🔤</span><b>Letters A · B · C</b><p>Letter names and sounds</p></div>
-            <div class="hook-card"><span class="hi">🗣️</span><b>6 everyday words</b><p>From animal to camera</p></div>
-            <div class="hook-card"><span class="hi">🎮</span><b>Desert games</b><p>Spin, match and sort</p></div>
+            <div class="hook-card"><span class="hi">🔤</span><b>حروف <span class="ltr">A · B · C</span></b><p>أسماء الحروف وأصواتها</p></div>
+            <div class="hook-card"><span class="hi">🗣️</span><b>٦ كلمات يومية</b><p><span class="ltr">From animal to camera</span></p></div>
+            <div class="hook-card"><span class="hi">🎮</span><b>ألعاب صحراوية</b><p>دوّر، طابق ورتّب</p></div>
           </div>
         </div>
       </div>
@@ -462,7 +467,7 @@ img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     <section class="slide" data-sec="Cover">
       <img class="bg" src="assets/cover.jpg?v=20260813c" alt="Desert caravan">
       <div class="shade"></div>
-      <div class="cover-title"><h1>ABC Start:<br>Desert Explorers</h1><p>Find the letters · Find the words</p></div>
+      <div class="cover-title"><h1>ABC Start:<br>Desert Explorers</h1><p>Find the letters · Find the words <span class="ar" style="font-size:26px;color:#ffe9c9">مغامرة الحروف في الصحراء</span></p></div>
       <div class="cover-kicker">A · B · C &nbsp;|&nbsp; Six words, one adventure</div>
     </section>
 
@@ -782,7 +787,7 @@ img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     <!-- p23 today's key points -->
     <section class="slide" data-sec="Today's Key Points">
       <div class="panel">
-        <div class="instr"><h2>Today's key points</h2></div>
+        <div class="instr"><h2>Today's key points <span class="ar">نقاط اليوم الأساسية</span></h2></div>
         <div class="kp-cols">
           <div class="kp-col">
             <h3>🎯 New words</h3>
@@ -808,25 +813,25 @@ img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     </section>
 
     <!-- p27 teacher feedback -->
-    <section class="slide" data-sec="Teacher Feedback">
+    <section class="slide rtl-ar" data-sec="Teacher Feedback">
       <div class="panel">
         <div class="instr"><button class="snd" data-audio="assets/audio/feedback.mp3?v=20260813c">🔊</button>
-          <h2>Teacher feedback</h2></div>
-        <p class="fb-sub">Review what the student mastered, and pick one clear next step.</p>
+          <h2>ملاحظات المعلم</h2></div>
+        <p class="fb-sub">راجع ما أتقنه الطالب، وحدد خطوة واحدة واضحة للممارسة بعد الحصة.</p>
         <div class="fb2">
           <div class="fb-block">
-            <div class="fb-head"><b>📚 Strengths</b>
+            <div class="fb-head"><b>📚 نقاط القوة</b>
               <div class="fb-stars"><span class="fst">★</span><span class="fst">★</span><span class="fst">★</span></div>
             </div>
-            <div class="editable fb-line" contenteditable="true" data-ph="What did the student use confidently?"></div>
+            <div class="editable fb-line" contenteditable="true" data-ph="ما الذي استخدمه الطالب بثقة؟"></div>
           </div>
           <div class="fb-block">
-            <div class="fb-head"><b>💡 Areas to improve</b></div>
-            <div class="editable fb-line" contenteditable="true" data-ph="Pick one short, doable goal."></div>
+            <div class="fb-head"><b>💡 مجالات التحسين</b></div>
+            <div class="editable fb-line" contenteditable="true" data-ph="اختر هدفاً قصيراً وقابلاً للتطبيق."></div>
           </div>
           <div class="fb-block">
-            <div class="fb-head"><b>🚀 Learning suggestions</b></div>
-            <div class="editable fb-line" contenteditable="true">Practice naming A, B, C words at home.</div>
+            <div class="fb-head"><b>🚀 اقتراحات التعلم</b></div>
+            <div class="editable fb-line" contenteditable="true">تدرّب على تسمية كلمات <span class="ltr">A, B, C</span> في المنزل.</div>
           </div>
         </div>
       </div>
@@ -847,7 +852,7 @@ img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
           <div class="cefr-lv"><b>A1</b><p>Understands basic phrases; introduces oneself and answers simple questions slowly.</p></div>
           <div class="cefr-lv"><b style="width:78px">Pre-A1</b><p>Recognises letters and their sounds; understands and says single everyday words.</p></div>
         </div>
-        <div class="cefr-fit">Lesson fit: <b>This lesson mainly targets Pre-A1 foundations: letter sounds and everyday words.</b></div>
+        <div class="cefr-fit">Lesson fit: <b>This lesson mainly targets Pre-A1- foundations: letter sounds and everyday words.</b></div>
       </div>
     </section>
 
@@ -855,7 +860,7 @@ img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     <section class="slide" data-sec="See You Soon!">
       <img class="bg" src="assets/ending.jpg?v=20260813c" alt="Desert sunset">
       <div class="shade"></div>
-      <div class="cover-title"><h1 style="font-size:56px">See You Soon!</h1>
+      <div class="cover-title"><h1 style="font-size:56px">See You Soon! <span class="ar" style="font-size:24px;color:#ffe9c9">أراك قريباً!</span></h1>
         <p>You really did a great job!</p></div>
       <div class="cover-kicker"><button class="snd" data-audio="assets/audio/ending.mp3?v=20260813c" style="vertical-align:middle">🔊</button>
         &nbsp;Join us next time and explore more letters!</div>
